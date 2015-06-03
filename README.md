@@ -11,16 +11,19 @@ Installation
 
     conda install -c blaze spark
 
-This is apparently not public, but Matt Rocklin and the Blaze team are very
-interested in supporting spark.
+This is not in the standard public channels, but Matt Rocklin and the
+Blaze team are very interested in supporting spark. If this works for you, you can skip to configuration below.
 
 ### On Linux
 
-CDH 5 is probably the best way to go for Linux, it includes Spark 1.3.0 (which
-includes Spark SQL), and also Hadoop, etc. Strangely, it doesn't appear to
-support postgres 9.4, and Spark SQL is "unsupported" (but it's installed). I
-don't know if this is just a judgement call, or if there are CDH-specific
-problems with Spark SQL. Cloudera develops Impala, a "competitor" to Spark.
+Cloudera's CDH 5 is probably the best way to go for Linux, it includes Spark
+1.3.0 (which includes Spark SQL), and also Hadoop, etc. Strangely, it doesn't
+appear to support postgres 9.4, and Spark SQL is "unsupported" (but it's
+installed). I don't know if this is just a judgement call, or if there are
+CDH-specific problems with Spark SQL. Cloudera develops Impala, a "competitor"
+to Spark.
+
+Link?
 
 ### On OS X
 
@@ -34,9 +37,7 @@ Homebrew complains, but I won't be installing scala 2.11 anytime soon.
 
 ### Virtual Machines
 
-HortonWorks and Cloudera both provide VMs. For now, it looks like Cloudera is
-more up-to-date (HortonWorks does Spark 1.2). Cloudera also supports more Linux
-flavors (provides debs and rpms).
+HortonWorks and Cloudera both provide VMs. For now, it looks like Cloudera is more up-to-date (Cloudera has Spark 1.3, HortonWorks is 1.2). Cloudera also supports more Linux flavors (provides debs and rpms).
 
 ### Setting up IPython
 
